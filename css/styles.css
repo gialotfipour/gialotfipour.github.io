@@ -1,11 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
-body{
-    font-family: "Figtree", sans-serif;
-    background-color:#FFFDEA;
-    color: #003BAF;
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: #fffdea;
+  color: #003baf;
+  padding: 3rem;
+  /* TRouBLe */
 }
-h1, h2, h3, h4, p, a{
-    margin-top:0;
-    
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin-top: 0;
 }
 
+h1 {
+  color: #003baf;
+  font-family: Figtree;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.085%; /* 115.281px */
+}
+
+h2 {
+  color: #003baf;
+  font-family: Figtree;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.085%; /* 76.854px */
+}
+
+h3 {
+  color: #002978;
+  font-family: Figtree;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+p {
+  color: #002978;
+  font-family: Figtree;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.box {
+  background: #e0edf1;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
