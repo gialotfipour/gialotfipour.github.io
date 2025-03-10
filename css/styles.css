@@ -56,7 +56,7 @@ p {
 .box {
   background: #e0edf1;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 9rem;
   margin-bottom: 1rem;
 }
 
@@ -72,7 +72,7 @@ p {
 .navigation {
   display: flex;
   flex-direction: column;
-  background: lightblue;
+  background: FFFDEA;
   padding: 2rem;
   width: 75%;
   justify-content: space-between;
@@ -88,16 +88,19 @@ p {
 .navigation-item {
   padding: 1rem 2rem;
   border-radius: 1.5rem;
-  background: hotpink;
+  background: 9FBFFF;
 }
 
+.hero {
+  padding: 5rem;
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .navigation {
     flex-direction: row;
   }
   body {
-    background: blue;
+    background: FFFDEA;
   }
 }
 
@@ -114,3 +117,10 @@ p {
     background: lemonchiffon;
   }
 }
+
+/* ABOUT ELEMENTS*/
+.about.herotext {
+  padding: 5rem;
+}
+
+NOTHING IS WORKINGGGG :D
