@@ -1,6 +1,16 @@
 @import url(reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Figtree", sans-serif;
   background-color: #fffdea;
@@ -8,14 +18,13 @@ body {
   padding: 3rem;
   /* TRouBLe */
 }
-h1,
-h2,
-h3,
-h4,
-p,
-a {
-  margin-top: 0;
+/* Make all images responsive */
+
+img {
+  max-width: 100%; /* Makes the image responsive to the container's width */
+  height: auto; /* Keeps the aspect ratio */
 }
+/* Typography Styles */
 
 h1 {
   color: #003baf;
@@ -53,7 +62,15 @@ p {
   line-height: normal;
 }
 
-.box {
+/* Hyperlink Styles */
+
+a {
+  text-decoration: none;
+}
+
+/* Container and box styles */
+
+/ .box {
   background: #e0edf1;
   border-radius: 10px;
   padding: 9rem;
@@ -61,18 +78,18 @@ p {
 }
 
 .hero {
-  padding: 2rem;
   border: 2px solid hotpink;
+  padding: 5rem;
+  margin-bottom: 1rem;
 }
 .portfolio-header {
   display: flex;
   flex-direction: row;
-
 }
 .navigation {
   display: flex;
   flex-direction: column;
-  background: FFFDEA;
+  background: #fffdea;
   padding: 2rem;
   width: 75%;
   justify-content: space-between;
@@ -85,93 +102,70 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+/* Navigation Styles */
 .navigation-item {
   padding: 1rem 2rem;
   border-radius: 1.5rem;
-  background: 9FBFFF;
+  border: 1px solid transparent;
+  background: transparent;
 }
 
-.hero {
-  padding: 5rem;
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .navigation {
-    flex-direction: row;
-  }
-  body {
-    background: FFFDEA;
-  }
+.navigation-item:hover {
+  border: 1px solid #003baf;
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  body {
-    background: FFFDEA;
-  }
+.navigation-item-active {
+  border: 1px solid #9fbfff;
+  background: #9fbfff;
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  body {
-    background: FFFDEAs;
-  }
-}
-
-/* ABOUT ELEMENTS*/
+/* ABOUT ELEMENTS */
 .about.herotext {
   padding: 5rem;
 }
 
-img {
-  max-width: 100%; /* Makes the image responsive to the container's width */
-  height: auto; /* Keeps the aspect ratio */
-}
-
+/* Footer Styles */
 .footer {
-  padding 2 rem;
+  padding: 2rem;
 }
 
-.contact-footer-area{
- justify-content: flex-end;
- align-items: end;
+.contact-footer-area {
+  justify-content: flex-end;
+  align-items: end;
 }
-
 
 /* AllTrails case study section on index.html page*/
 
-
-
-
-.project-title{
+.project-title {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20vh;
 }
-.project-description{
+.project-description {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 5vh;
 }
-.project-type{
+.project-type {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 5vh;
 }
 
-.project-overview{
+.project-overview {
   margin-bottom: 4rem;
   margin-top: 2rem;
 }
 
-.problem-statement{ 
+.problem-statement {
   margin-bottom: 2rem;
 }
 
-.role-team-timeline{
+.role-team-timeline {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -180,50 +174,16 @@ img {
   padding-bottom: 4rem;
 }
 
-.solution{
+.solution {
   padding-bottom: 4rem;
 }
 
-.define{
-  gap: 2rem;
+.project-stage {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.test{
-  gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.ideate{
-  gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.design{
-  gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-
-.the-impacto{
-  background-color: yellow;
-  padding-bottom: 10rem;
-}
-
-.learnings{
- padding-top: 2rem;
- padding-bottom: 4rem;
-}
-
-.insight-tools{
-  background-color: black;
-}
-
-.main-footer-area{
+.main-footer-area {
   padding-bottom: 4rem;
 }
 
@@ -233,8 +193,6 @@ img {
   gap: 20px; /* Adds space between text and image */
 }
 
-
-
 /* The Good Stuff case study section on index.html page*/
 .hero-section {
   background-color: aliceblue;
@@ -243,7 +201,7 @@ img {
   display: flex; /* Enables side-by-side layout */
   align-items: center; /* Centers items vertically */
   justify-content: space-between; /* Adds spacing */
-  width: 100vw; /* Full width */
+  width: 100%; /* Full width */
   padding: 40px; /* Adjust as needed */
   margin-bottom: 6rem;
 }
@@ -259,24 +217,17 @@ img {
   padding-right: 3rem;
 }
 
-
-
 /* AllTrails container section index.html*/
-
-.project-section{
-  background-color: aliceblue;
-  outline: 3px solid rgb(136, 136, 255);
-  border-radius: 10px;
-  padding: 8rem;
-  margin-bottom: 1rem;
-  align-content: flex-start;
-}
 
 .project-section {
   display: flex; /* Enables side-by-side layout */
+  background-color: aliceblue;
+  outline: 3px solid rgb(136, 136, 255);
+  border-radius: 10px;
+  margin-bottom: 1rem;
   align-items: center; /* Centers content vertically */
   justify-content: space-between; /* Adds spacing */
-  width: 100vw; /* Full width */
+  width: 100%; /* Full width */
   padding: 40px; /* Adjust as needed */
 }
 
@@ -289,4 +240,28 @@ img {
   max-width: 400px; /* Prevents it from getting too large */
   height: auto; /* Keeps aspect ratio */
   padding-right: 3rem;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navigation {
+    flex-direction: row;
+  }
+  body {
+    background: #fffdea;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background: #fffdea;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  body {
+    background: #fffdea;
+  }
 }
