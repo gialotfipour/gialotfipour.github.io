@@ -52,7 +52,8 @@ p {
   font-weight: 500;
   line-height: normal;
 }
-.project-section {
+
+.box {
   background: #e0edf1;
   border-radius: 10px;
   padding: 9rem;
@@ -66,7 +67,7 @@ p {
 .portfolio-header {
   display: flex;
   flex-direction: row;
-  border: 3px solid blue;
+
 }
 .navigation {
   display: flex;
@@ -93,54 +94,6 @@ p {
 .hero {
   padding: 5rem;
 }
-
-/* Project Page Styles */
-.project-header {
-  min-height: 60vh;
-  background: lightblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.project-inner-container {
-  background: salmon;
-}
-.project-title {
-  text-align: center;
-  background: yellow;
-  margin-bottom: 1rem;
-}
-.project-title:hover {
-  background: white;
-}
-.project-description {
-  text-align: center;
-  background: yellow;
-  margin-bottom: 1rem;
-}
-.project-type {
-  text-transform: uppercase;
-  text-align: center;
-  background: yellow;
-}
-
-/* Footer Styles */
-
-.footer {
-  min-height: 40vh;
-  display: flex;
-  flex-direction: row;
-}
-.main-footer-area {
-  width: 70%;
-  background: orangered;
-}
-.contact-footer-area {
-  width: 30%;
-  background: yellowgreen;
-}
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .navigation {
@@ -154,14 +107,14 @@ p {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body {
-    background: green;
+    background: FFFDEA;
   }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   body {
-    background: lemonchiffon;
+    background: FFFDEAs;
   }
 }
 
@@ -170,33 +123,170 @@ p {
   padding: 5rem;
 }
 
-/* NOTHING IS WORKINGGGG :D 
+img {
+  max-width: 100%; /* Makes the image responsive to the container's width */
+  height: auto; /* Keeps the aspect ratio */
+}
+
+.footer {
+  padding 2 rem;
+}
+
+.contact-footer-area{
+ justify-content: flex-end;
+ align-items: end;
+}
+
+
+/* AllTrails case study section on index.html page*/
 
 
 
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡞⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠀⡠⠊⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡌⠀⠀⠀⢧⠀⠀⠀⠀⠀⠀⠀⡜⠁⠀⠀⠀⠀⠣⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡪⠄⠀⠀⠀⠀⡇⣀⣀⣀⡤⠤⡧⠥⠀⠀⠀⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠃⠀⠀⠀⠀⠀⠳⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⡀⠀⠈⡇⠀⠀⢀⡠⠔⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⡇⠀⠀⠀⠀⡤⠂⡀⠀⠀⠀⠀⠀⠀⠀⢀⡜⠁⠀⡇⠀⠀⣧⠂⠃⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠁⢺⠢⢀⡀⠀⡇⠀⠉⠢⡀⠀⡏⠉⡇⠀⣇⡀⠀⢀⡇⠀⠎⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡇⠀⠀⠁⠙⣆⣀⡠⠞⠀⡏⣑⡇⠀⠀⠉⠉⠁⠀⡄⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠠⠐⢯⡈⠁⠁⠀⠀⠀⠀⠀⡗⠀⠀⢧⠀⠀⠀⠀⠀⠀⠈⡳⠥⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠐⠊⠈⠀⠀⠀⠀⠙⢄⡀⠀⠀⠀⠀⡎⠀⠀⠀⠀⡇⠀⠀⠀⠀⣠⠎⠁⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠣⢄⣀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡤⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-*/
+
+.project-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+.project-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+.project-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+.project-overview{
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.problem-statement{ 
+  margin-bottom: 2rem;
+}
+
+.role-team-timeline{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.solution{
+  padding-bottom: 4rem;
+}
+
+.define{
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.test{
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ideate{
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.design{
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.the-impacto{
+  background-color: yellow;
+  padding-bottom: 10rem;
+}
+
+.learnings{
+ padding-top: 2rem;
+ padding-bottom: 4rem;
+}
+
+.insight-tools{
+  background-color: black;
+}
+
+.main-footer-area{
+  padding-bottom: 4rem;
+}
+
+.text-image-container {
+  display: flex; /* Enables side-by-side layout */
+  align-items: center; /* Aligns image and text vertically */
+  gap: 20px; /* Adds space between text and image */
+}
+
+
+
+/* The Good Stuff case study section on index.html page*/
+.hero-section {
+  background-color: aliceblue;
+  outline: 3px solid rgb(136, 136, 255);
+  border-radius: 10px;
+  display: flex; /* Enables side-by-side layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Adds spacing */
+  width: 100vw; /* Full width */
+  padding: 40px; /* Adjust as needed */
+  margin-bottom: 6rem;
+}
+
+.text-content {
+  width: 50%; /* Ensures text takes up half of the screen */
+}
+
+.hero-image {
+  width: 40%; /* Adjust the image width */
+  max-width: 400px; /* Prevents it from getting too large */
+  height: auto; /* Keeps aspect ratio */
+  padding-right: 3rem;
+}
+
+
+
+/* AllTrails container section index.html*/
+
+.project-section{
+  background-color: aliceblue;
+  outline: 3px solid rgb(136, 136, 255);
+  border-radius: 10px;
+  padding: 8rem;
+  margin-bottom: 1rem;
+  align-content: flex-start;
+}
+
+.project-section {
+  display: flex; /* Enables side-by-side layout */
+  align-items: center; /* Centers content vertically */
+  justify-content: space-between; /* Adds spacing */
+  width: 100vw; /* Full width */
+  padding: 40px; /* Adjust as needed */
+}
+
+.text-content {
+  width: 50%; /* Ensures text takes up half of the screen */
+}
+
+.project-image {
+  width: 40%; /* Adjust image width */
+  max-width: 400px; /* Prevents it from getting too large */
+  height: auto; /* Keeps aspect ratio */
+  padding-right: 3rem;
+}
