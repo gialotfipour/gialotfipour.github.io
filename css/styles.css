@@ -78,7 +78,6 @@ a {
 }
 
 .hero {
-  border: 2px solid hotpink;
   padding: 5rem;
   margin-bottom: 1rem;
 }
@@ -95,6 +94,11 @@ a {
   justify-content: space-between;
 }
 .logo {
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 36px;
+  color: #003baf;
+  padding-left: 7rem;
+}
   width: 25%;
   background: yellow;
   display: flex;
@@ -118,6 +122,8 @@ a {
 .navigation-item-active {
   border: 1px solid #9fbfff;
   background: #9fbfff;
+  padding: 1rem;
+  border-radius: 15px;
 }
 
 /* ABOUT ELEMENTS */
